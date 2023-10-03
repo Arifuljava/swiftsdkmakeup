@@ -31,8 +31,8 @@ class SDKPartController: UIViewController {
     @IBAction func go_to_print(_ sender: Any) {
         print("Go To");
         let storyboard = UIStoryboard(name: "MainSecond", bundle: nil)
-        let secondController3 = storyboard.instantiateViewController(withIdentifier: "sdkmaincontroller") as! SDKMainScreenController
-        //secondController3.imageData2222 = imageData
+        let secondController3 = storyboard.instantiateViewController(withIdentifier: "cellgres") as! SecondCntroller
+        secondController3.imageData2222 = imageData
        
 
         present(secondController3, animated: true, completion: nil)
